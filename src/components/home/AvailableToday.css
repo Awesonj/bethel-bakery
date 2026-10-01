@@ -1,0 +1,33 @@
+.available-today {
+  padding: 2rem 0 1rem;
+}
+
+.available-today__heading {
+  font-family: "Playfair Display", serif;
+  color: var(--bb-navy);
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+  padding: 0 1.5rem;
+}
+
+.available-today__viewport {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 1.5rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.available-today__track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  will-change: transform;
+}
+
+.available-today__skeleton {
+  flex: 0 0 auto;
+  width: 240px;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #eee 25%, #f5f5f5 50%, #eee 75%);
+}

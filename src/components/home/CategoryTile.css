@@ -1,0 +1,50 @@
+.category-tile {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(27, 42, 65, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-tile:hover,
+.category-tile:active {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(27, 42, 65, 0.18);
+}
+
+.category-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.category-tile__placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #eee 25%, #f5f5f5 50%, #eee 75%);
+}
+
+.category-tile__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(27, 42, 65, 0.7) 0%,
+    rgba(27, 42, 65, 0.1) 55%,
+    transparent 100%
+  );
+}
+
+.category-tile__name {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-weight: 600;
+}

@@ -1,0 +1,33 @@
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.quantity-control button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--bb-gold);
+  background: #fff;
+  color: var(--bb-navy);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.quantity-control button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.quantity-control button:not(:disabled):hover {
+  background: var(--bb-cream);
+}
+
+.quantity-control__value {
+  min-width: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}

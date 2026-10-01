@@ -1,0 +1,80 @@
+﻿.login-page {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background: var(--bb-cream);
+  min-height: 60vh;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  box-shadow: 0 4px 16px rgba(27, 42, 65, 0.08);
+}
+
+.login-form__heading {
+  font-family: "Playfair Display", serif;
+  color: var(--bb-navy);
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.login-form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: var(--bb-navy);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.login-form__label input {
+  padding: 0.65rem 0.8rem;
+  border: 1px solid rgba(27, 42, 65, 0.2);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.login-form__error {
+  color: #b3261e;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.login-form__submit {
+  background: var(--bb-gold);
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-form__submit:hover {
+  background: #a5824c;
+}
+
+.login-form__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login-form__signup {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--bb-navy);
+  margin: 0;
+}
+
+.login-form__signup a {
+  color: var(--bb-gold);
+  font-weight: 600;
+}

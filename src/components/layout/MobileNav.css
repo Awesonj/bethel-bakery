@@ -1,0 +1,147 @@
+.mobile-nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(27, 42, 65, 0.45);
+  z-index: 100;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 78%;
+  max-width: 320px;
+  height: 100%;
+  background: var(--bb-cream, #f7f1e6);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  z-index: 101;
+  box-shadow: -4px 0 24px rgba(27, 42, 65, 0.15);
+}
+
+.mobile-nav__close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--bb-navy, #1b2a41);
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.mobile-nav__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.mobile-nav__links a {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  color: var(--bb-navy, #1b2a41);
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  padding-bottom: 3px;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav__links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--bb-gold, #b8965a);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.mobile-nav__links a:hover,
+.mobile-nav__links a:focus-visible {
+  color: var(--bb-gold, #b8965a);
+}
+
+.mobile-nav__links a:hover::after,
+.mobile-nav__links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.mobile-nav__divider {
+  height: 1px;
+  width: 100%;
+  background: rgba(184, 150, 90, 0.35);
+  margin: 1.75rem 0;
+}
+
+.mobile-nav__account {
+  width: 100%;
+}
+
+.mobile-nav__account-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--bb-navy, #1b2a41);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mobile-nav__chevron {
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.mobile-nav__chevron--open {
+  transform: rotate(180deg);
+}
+
+.mobile-nav__account-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  overflow: hidden;
+  margin-top: 0.9rem;
+  padding-left: 1.7rem;
+}
+
+.mobile-nav__secondary {
+  text-decoration: none;
+  color: var(--bb-gold, #b8965a);
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav-overlay,
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav__logout {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  color: var(--bb-gold, #b8965a);
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-family: inherit;
+}

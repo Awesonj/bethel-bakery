@@ -1,0 +1,56 @@
+.account-menu {
+  position: relative;
+}
+
+.account-menu__trigger {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--bb-navy);
+}
+
+.account-menu__dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  background: #fff;
+  border: 1px solid rgba(184, 150, 90, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(27, 42, 65, 0.12);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  z-index: 60;
+}
+
+.account-menu__dropdown a {
+  padding: 0.5rem 0.75rem;
+  color: var(--bb-navy);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.account-menu__dropdown a:hover {
+  background: var(--bb-cream);
+  color: var(--bb-gold);
+}
+
+.account-menu__logout {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  color: var(--bb-navy);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.account-menu__logout:hover {
+  background: var(--bb-cream);
+  color: var(--bb-gold);
+}

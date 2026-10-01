@@ -1,0 +1,120 @@
+.site-footer {
+  background: var(--bb-gold);
+  color: #fff;
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.site-footer__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.site-footer__logo {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.site-footer__links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.site-footer__links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.site-footer__socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-footer__socials a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.site-footer__socials a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.site-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.site-footer__legal {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-footer__legal a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.site-footer__legal a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.site-footer__top-button {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.site-footer__top-button:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+@media (min-width: 768px) {
+  .site-footer__top {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .site-footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(27, 42, 65, 0.75) 0%,
+    rgba(27, 42, 65, 0.25) 50%,
+    rgba(27, 42, 65, 0.05) 100%
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 0 1.5rem 3rem;
+}
+
+.hero__heading {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  min-height: 2.4em; /* reserves space so layout doesn't jump while typing */
+}
+
+.hero__cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #fff;
+  margin-left: 3px;
+  animation: hero-blink 0.9s steps(1) infinite;
+  vertical-align: text-bottom;
+}
+
+@keyframes hero-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero__button {
+  display: inline-block;
+  background: var(--bb-gold);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.hero__button:hover {
+  background: #a5824c;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero__heading {
+    font-size: 3rem;
+  }
+}

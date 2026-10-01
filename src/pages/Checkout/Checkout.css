@@ -1,0 +1,123 @@
+.checkout-page {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 2rem 20px 4rem;
+}
+
+.checkout-page__empty {
+  text-align: center;
+  color: var(--bb-navy);
+  padding: 3rem 0;
+}
+
+.checkout-page__heading {
+  font-family: "Playfair Display", serif;
+  color: var(--bb-navy);
+  margin: 0 0 1.5rem;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.checkout-section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(27, 42, 65, 0.06);
+}
+
+.checkout-section h2 {
+  font-family: "Playfair Display", serif;
+  color: var(--bb-navy);
+  font-size: 1.05rem;
+  margin: 0 0 1rem;
+}
+
+.checkout-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--bb-navy);
+  font-size: 0.9rem;
+}
+
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: var(--bb-navy);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.checkout-field input,
+.checkout-field textarea {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgba(27, 42, 65, 0.2);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.checkout-note {
+  font-size: 0.8rem;
+  color: var(--bb-navy);
+  opacity: 0.7;
+  background: var(--bb-cream);
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.checkout-summary-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--bb-navy);
+}
+
+.checkout-summary-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--bb-navy);
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(27, 42, 65, 0.1);
+}
+
+.checkout-page__submit {
+  background: var(--bb-gold);
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.checkout-page__submit:hover:not(:disabled) {
+  background: #a5824c;
+}
+
+.checkout-page__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

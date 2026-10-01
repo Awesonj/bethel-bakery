@@ -1,0 +1,99 @@
+.delivery-page {
+  padding-bottom: 3rem;
+}
+
+.delivery-banner {
+  position: relative;
+  overflow: hidden;
+  background: var(--bb-cream);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(184, 150, 90, 0.25);
+}
+
+.delivery-banner__pattern {
+  position: absolute;
+  inset: -20% -10%;
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(184, 150, 90, 0.12) 0,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 60%,
+      rgba(184, 150, 90, 0.1) 0,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 50% 90%,
+      rgba(184, 150, 90, 0.08) 0,
+      transparent 35%
+    );
+  pointer-events: none;
+}
+
+.delivery-banner__title {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  color: var(--bb-gold);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.delivery-content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2.5rem 20px 0;
+}
+
+.delivery-intro {
+  color: var(--bb-navy);
+  line-height: 1.7;
+  margin: 0 0 2.5rem;
+  font-size: 1rem;
+}
+
+.delivery-block {
+  margin-bottom: 2.5rem;
+}
+
+.delivery-block h2 {
+  font-family: "Playfair Display", serif;
+  color: #9c7a3f;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 0 0.75rem;
+}
+
+.delivery-block p {
+  color: var(--bb-navy);
+  line-height: 1.7;
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.delivery-block p strong {
+  color: var(--bb-navy);
+}
+
+.delivery-badge {
+  display: inline-block;
+  background: var(--bb-gold);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+  margin-top: 0.5rem;
+}
+
+.delivery-banner__logo {
+  position: relative;
+  height: 56px;
+  width: auto;
+  margin-bottom: 0.75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

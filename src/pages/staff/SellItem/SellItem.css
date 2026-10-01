@@ -1,0 +1,210 @@
+.sell-item {
+  padding-bottom: 9rem;
+}
+
+.sell-item__heading {
+  font-family: "Playfair Display", serif;
+  color: var(--bb-navy);
+  margin: 0 0 1.25rem;
+}
+
+.sell-item__empty {
+  color: var(--bb-navy);
+  opacity: 0.6;
+}
+
+.sell-item__item-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.sell-item__item-box {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(27, 42, 65, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.sell-item__item-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, #e8e2d4, #f2ede1);
+}
+
+.sell-item__item-name {
+  font-weight: 600;
+  color: var(--bb-navy);
+  font-size: 0.9rem;
+  padding: 0.75rem 0.9rem 0;
+}
+
+.sell-item__item-price {
+  color: var(--bb-gold);
+  font-weight: 700;
+  padding: 0.2rem 0.9rem 0.5rem;
+}
+
+.sell-item__card-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  padding: 0.5rem 0.9rem 0.9rem;
+  margin-top: auto;
+}
+
+.sell-item__stepper-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--bb-gold);
+  background: #fff;
+  color: var(--bb-navy);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.sell-item__stepper-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.sell-item__stepper-btn:not(:disabled):hover {
+  background: var(--bb-cream);
+}
+
+.sell-item__stepper-value {
+  min-width: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--bb-navy);
+}
+
+.sell-item__add-order {
+  width: 100%;
+  background: var(--bb-gold);
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.sell-item__add-order:hover:not(:disabled) {
+  background: #a5824c;
+}
+
+.sell-item__add-order:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sell-item__bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid rgba(27, 42, 65, 0.12);
+  padding: 1rem;
+  box-shadow: 0 -4px 16px rgba(27, 42, 65, 0.08);
+  z-index: 310;
+}
+
+
+
+.sell-item__order-lines {
+  max-height: 140px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.sell-item__order-line {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1.25rem;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--bb-navy);
+}
+
+.sell-item__order-name {
+  font-weight: 600;
+}
+
+.sell-item__order-stepper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sell-item__order-subtotal {
+  font-weight: 700;
+  min-width: 60px;
+  text-align: right;
+}
+
+.sell-item__totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(27, 42, 65, 0.1);
+}
+
+.sell-item__total {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--bb-navy);
+}
+
+.sell-item__actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.sell-item__cancel {
+  background: none;
+  border: 1px solid rgba(27, 42, 65, 0.3);
+  color: var(--bb-navy);
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sell-item__pay {
+  background: var(--bb-gold);
+  border: none;
+  color: #fff;
+  padding: 0.65rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sell-item__pay:hover:not(:disabled) {
+  background: #a5824c;
+}
+
+.sell-item__pay:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (min-width: 1024px) {
+  .sell-item__bar {
+    left: 230px;
+    padding: 1rem 2rem;
+  }
+}
